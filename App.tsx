@@ -1,13 +1,13 @@
 import React from "react";
-import {StatusBar, SafeAreaView } from "react-native";
+import {StatusBar, ScrollView } from "react-native";
 import Carrinho from "./src/pages/Carrinho";
 
 export default function App() {
 
   return (
-    <SafeAreaView>
+    <ScrollView>
       <StatusBar />
       <Carrinho />
-    </SafeAreaView>
+    </ScrollView>
   );
 }
