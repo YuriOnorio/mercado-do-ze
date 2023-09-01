@@ -13,74 +13,76 @@ const width = Dimensions.get("screen").width;
 export default function Carrinho() {
   return (
     <>
-      <Image source={topo} style={estilos.topo} />
-      <Text style={estilos.titulo}>Detelhe do Carrinho</Text>
+      <View style={estilos.corFundo}>
+        <Image source={topo} style={estilos.topo} />
+        <Text style={estilos.titulo}>Detelhe do Carrinho</Text>
 
-      <View style={estilos.carrinho}>
-        <Text style={estilos.titulocarrinho}>Carrinho de compras</Text>
+        <View style={estilos.carrinho}>
+          <Text style={estilos.titulocarrinho}>Bebidas Alcoólicas:</Text>
 
-        <View style={estilos.fazenda}>
-          <Image style={estilos.imagemFazenda} source={logo} />
-          <Text style={estilos.nomefazenda}>Supermercados Panelão</Text>
-        </View>
+          <Text style={estilos.descricao}>
+            Sempre com qualiade e preço justo
+          </Text>
 
-        <Text style={estilos.descricao}>
-          Sempre com a qualiade e preço justo
-        </Text>
-
-        <View style={estilos.divProduto}>
-          <Image style={estilos.imagemProduto} source={saque} />
-          <View>
-           <Text style={estilos.nomeProduto}>Garrafa de saque sakai 750Ml</Text>
-           <Text style={estilos.preco}>R$ 25,90</Text>
-           <Text style={estilos.descricao}>
-            Proibido a venda para menores de 18 anos
-           </Text>
+          <View style={estilos.divProduto}>
+            <Image style={estilos.imagemProduto} source={saque} />
+            <View style={estilos.separaca}>
+              <Text style={estilos.nomeProduto}>
+                Garrafa de saque sakai 750Ml
+              </Text>
+              <Text style={estilos.preco}>R$ 25,90</Text>
+              <Text style={estilos.descricao}>
+                Proibido para menores de 18 anos
+              </Text>
+            </View>
           </View>
-        </View>
 
-        <View style={estilos.divProduto}>
-          <Image style={estilos.imagemProduto} source={jack} />
-          <View>
-           <Text style={estilos.nomeProduto}>Jack Daniels Fire 1L</Text>
-           <Text style={estilos.preco}>R$ 159,90</Text>
-           <Text style={estilos.descricao}>
-            Proibido a venda para menores de 18 anos
-           </Text>
+          <View style={estilos.divProduto}>
+            <Image style={estilos.imagemProduto} source={jack} />
+            <View style={estilos.separaca}>
+              <Text style={estilos.nomeProduto}>Jack Daniels Fire 1L</Text>
+              <Text style={estilos.preco}>R$ 159,90</Text>
+              <Text style={estilos.descricao}>
+                Proibido para menores de 18 anos
+              </Text>
+            </View>
           </View>
-        </View>
 
-        <View style={estilos.divProduto}>
-          <Image style={estilos.imagemProduto} source={RedLabel} />
-          <View>
-            <Text style={estilos.nomeProduto}>RedLabel 1L</Text>
-            <Text style={estilos.preco}>R$ 105,90</Text>
-            <Text style={estilos.descricao}>
-              Proibido a venda para menores de 18 anos
-            </Text>
+          <View style={estilos.divProduto}>
+            <Image style={estilos.imagemProduto} source={RedLabel} />
+            <View style={estilos.separaca}>
+              <Text style={estilos.nomeProduto}>RedLabel 1L</Text>
+              <Text style={estilos.preco}>R$ 105,90</Text>
+              <Text style={estilos.descricao}>
+                Proibidopara menores de 18 anos
+              </Text>
+            </View>
           </View>
-        </View>
 
-        <View style={estilos.divProduto}>
-          <Image style={estilos.imagemProduto} source={Ballantines} />
-          <View>
-            <Text style={estilos.nomeProduto}>Ballantines 1L</Text>
-            <Text style={estilos.preco}>R$ 89,90</Text>
-            <Text style={estilos.descricao}>
-              Proibido a venda para menores de 18 anos
-            </Text>
+          <View style={estilos.divProduto}>
+            <Image style={estilos.imagemProduto} source={Ballantines} />
+            <View style={estilos.separaca}>
+              <Text style={estilos.nomeProduto}>Ballantines 1L</Text>
+              <Text style={estilos.preco}>R$ 89,90</Text>
+              <Text style={estilos.descricao}>
+                Proibido para menores de 18 anos
+              </Text>
+            </View>
           </View>
-        </View>
 
-        <View style={estilos.divProduto}>
-          <Image style={estilos.imagemProduto} source={Royal} />
-          <View>
-            <Text style={estilos.nomeProduto}>Royal Salute 700Ml</Text>
-            <Text style={estilos.preco}>R$ 749,90</Text>
-            <Text style={estilos.descricao}>
-              Proibido a venda para menores de 18 anos
-            </Text>
+          <View style={estilos.divProduto}>
+            <Image style={estilos.imagemProduto} source={Royal} />
+            <View style={estilos.separaca}>
+              <Text style={estilos.nomeProduto}>Royal Salute 700Ml</Text>
+              <Text style={estilos.preco}>R$ 749,90</Text>
+              <Text style={estilos.descricao}>
+                Proibido para menores de 18 anos
+              </Text>
+            </View>
           </View>
+
+          <Text style={estilos.doces}>Doces:</Text>
+
         </View>
       </View>
     </>
@@ -106,9 +108,8 @@ const estilos = StyleSheet.create({
 
   titulocarrinho: {
     fontSize: 26,
-    lineHeight: 42,
-    color: "#464646",
-    fontFamily: "MontserratBold",
+    lineHeight: 52,
+    color: "#464646"
   },
 
   carrinho: {
@@ -146,8 +147,8 @@ const estilos = StyleSheet.create({
   },
 
   imagemProduto: {
-    width: 92,
-    height: 92,
+    width: 100,
+    height: 120,
   },
 
   nomeProduto: {
@@ -156,7 +157,26 @@ const estilos = StyleSheet.create({
   },
 
   divProduto: {
-    flexDirection: 'row',
-    marginTop: 25
+    flexDirection: "row",
+    marginTop: 25,
+  },
+
+  corFundo: {
+    backgroundColor: "#F1F0F0",
+  },
+
+  separaca: {
+    marginLeft: 12
+  },
+
+  
+  doces: {
+    fontSize: 26,
+    lineHeight: 42,
+    color: "#151515",
+    marginTop: 15,
+    textShadowColor: 'rgba(0, 0, 0, 0.5)', // Cor da sombra
+    textShadowOffset: { width: 3, height: 3 }, // Deslocamento da sombra (horizontal e vertical)
+    textShadowRadius: 8, // Raio da sombra (desfoque)
   }
 });
