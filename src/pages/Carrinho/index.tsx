@@ -7,6 +7,8 @@ import jack from "../../../assets/jack.png";
 import RedLabel from "../../../assets/RedLabel.png";
 import Ballantines from "../../../assets/Ballantines.png";
 import Royal from "../../../assets/Royal.png";
+import chivas from "../../../assets/chivas.png";
+import GranVinho from "../../../assets/GranVinho.png";
 
 const width = Dimensions.get("screen").width;
 
@@ -15,22 +17,22 @@ export default function Carrinho() {
     <>
       <View style={estilos.corFundo}>
         <Image source={topo} style={estilos.topo} />
-        <Text style={estilos.titulo}>Detelhe do Carrinho</Text>
+        <Text style={estilos.titulo}>Faculdade Beer</Text>
 
         <View style={estilos.carrinho}>
-          <Text style={estilos.titulocarrinho}>Bebidas Alcoólicas:</Text>
+          <Text style={estilos.titulocarrinho}>Whiskys:</Text>
 
           <Text style={estilos.descricao}>
-            Sempre com qualiade e preço justo
+            Produtos 100% origianis com o melhor preço
           </Text>
 
           <View style={estilos.divProduto}>
-            <Image style={estilos.imagemProduto} source={saque} />
+            <Image style={estilos.imagemProduto} source={chivas} />
             <View style={estilos.separaca}>
               <Text style={estilos.nomeProduto}>
-                Garrafa de saque sakai 750Ml
+                Chivas 18 anos 750Ml
               </Text>
-              <Text style={estilos.preco}>R$ 25,90</Text>
+              <Text style={estilos.preco}>R$ 519,90</Text>
               <Text style={estilos.descricao}>
                 Proibido para menores de 18 anos
               </Text>
@@ -81,7 +83,20 @@ export default function Carrinho() {
             </View>
           </View>
 
-          <Text style={estilos.doces}>Doces:</Text>
+          <View style={estilos.colorCerveja}>
+          <Text style={estilos.titulocarrinho}>Vinhos:</Text>
+          </View>
+
+          <View style={estilos.divProduto}>
+            <Image style={estilos.imagemProduto} source={GranVinho} />
+            <View style={estilos.separaca}>
+              <Text style={estilos.nomeProduto}>Royal Salute 700Ml</Text>
+              <Text style={estilos.preco}>R$ 749,90</Text>
+              <Text style={estilos.descricao}>
+                Proibido para menores de 18 anos
+              </Text>
+            </View>
+          </View>
 
         </View>
       </View>
@@ -107,9 +122,10 @@ const estilos = StyleSheet.create({
   },
 
   titulocarrinho: {
-    fontSize: 26,
+    fontSize: 28,
     lineHeight: 52,
-    color: "#464646"
+    color: "#464646",
+    textAlign: "center",
   },
 
   carrinho: {
@@ -121,7 +137,6 @@ const estilos = StyleSheet.create({
     fontSize: 16,
     lineHeight: 26,
     marginLeft: 12,
-    fontFamily: "MontserratBold",
   },
 
   imagemFazenda: {
@@ -137,6 +152,7 @@ const estilos = StyleSheet.create({
   descricao: {
     color: "#a3a3a3",
     fontStyle: "italic",
+    textAlign: "center",
   },
 
   preco: {
@@ -159,6 +175,7 @@ const estilos = StyleSheet.create({
   divProduto: {
     flexDirection: "row",
     marginTop: 25,
+    backgroundColor: "#f9f9f9",
   },
 
   corFundo: {
@@ -174,9 +191,14 @@ const estilos = StyleSheet.create({
     fontSize: 26,
     lineHeight: 42,
     color: "#151515",
-    marginTop: 15,
-    textShadowColor: 'rgba(0, 0, 0, 0.5)', // Cor da sombra
-    textShadowOffset: { width: 3, height: 3 }, // Deslocamento da sombra (horizontal e vertical)
-    textShadowRadius: 8, // Raio da sombra (desfoque)
+    //textShadowColor: 'rgba(0, 0, 0, 0.5)', // Cor da sombra
+    //textShadowOffset: { width: 3, height: 3 }, // Deslocamento da sombra (horizontal e vertical)
+    //textShadowRadius: 8, // Raio da sombra (desfoque)
+    textAlign: "center"
+  },
+
+  colorCerveja: {
+    backgroundColor: '#f9f9f9',
+    marginTop: 30
   }
 });
