@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Image, Dimensions, Text, View } from "react-native";
+import { StyleSheet, TextInput, Image, Dimensions, Text, View } from "react-native";
 import topo from "../../../assets/topo.png";
 import logo from "../../../assets/logo.png";
 import saque from "../../../assets/saque.png";
@@ -9,6 +9,7 @@ import Ballantines from "../../../assets/Ballantines.png";
 import Royal from "../../../assets/Royal.png";
 import chivas from "../../../assets/chivas.png";
 import GranVinho from "../../../assets/GranVinho.png";
+import { CgSearch } from "react-icons/cg";
 
 const width = Dimensions.get("screen").width;
 
@@ -25,6 +26,12 @@ export default function Carrinho() {
           <Text style={estilos.descricao}>
             Produtos 100% origianis com o melhor preço
           </Text>
+
+          <View style={estilos.pesquisa}>
+          <CgSearch size={20} color="#4c4d5e" />
+            <TextInput style={estilos.inputpesquisa}
+              placeholder="Pesquisar..."/>
+          </View>
 
           <View style={estilos.divProduto}>
             <Image style={estilos.imagemProduto} source={chivas} />
@@ -74,21 +81,6 @@ export default function Carrinho() {
 
           <View style={estilos.divProduto}>
             <Image style={estilos.imagemProduto} source={Royal} />
-            <View style={estilos.separaca}>
-              <Text style={estilos.nomeProduto}>Royal Salute 700Ml</Text>
-              <Text style={estilos.preco}>R$ 749,90</Text>
-              <Text style={estilos.descricao}>
-                Proibido para menores de 18 anos
-              </Text>
-            </View>
-          </View>
-
-          <View style={estilos.colorCerveja}>
-          <Text style={estilos.titulocarrinho}>Vinhos:</Text>
-          </View>
-
-          <View style={estilos.divProduto}>
-            <Image style={estilos.imagemProduto} source={GranVinho} />
             <View style={estilos.separaca}>
               <Text style={estilos.nomeProduto}>Royal Salute 700Ml</Text>
               <Text style={estilos.preco}>R$ 749,90</Text>
@@ -200,5 +192,16 @@ const estilos = StyleSheet.create({
   colorCerveja: {
     backgroundColor: '#f9f9f9',
     marginTop: 30
+  },
+
+  pesquisa: {
+    backgroundColor: '#cccccc',
+    borderRadius: 5,
+    height: 30
+  },
+
+  inputpesquisa: {
+    left: 10,
+    fontSize: 20
   }
 });
