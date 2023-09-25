@@ -1,9 +1,9 @@
 import React from "react";
-import { StyleSheet, TextInput, Image, Dimensions, Text, View } from "react-native";
-import Produto from "./components/Produto";
+import { StyleSheet, View } from "react-native";
+import Produto from "./Components/Produto";
 
 
-import Topo from "./components/Topo";
+import Topo from "./Components/Topo";
 
 
 export default function Carrinho() {

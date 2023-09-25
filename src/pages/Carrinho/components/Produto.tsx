@@ -1,13 +1,13 @@
 import React from "react";
-import { StyleSheet, TextInput, Image, Dimensions, Text, View } from "react-native";
+import { StyleSheet, TextInput, Image, Text, View } from "react-native";
 
-import logo from "../../../../assets/logo.png";
+
 import jack from "../../../../assets/jack.png";
 import RedLabel from "../../../../assets/RedLabel.png";
 import Ballantines from "../../../../assets/Ballantines.png";
 import Royal from "../../../../assets/Royal.png";
 import chivas from "../../../../assets/chivas.png";
-import { CgSearch } from "react-icons/cg";
+
 
 export default function Produto () {
     return <>
@@ -21,7 +21,7 @@ export default function Produto () {
           </Text>
 
           <View style={estilos.pesquisa}>
-          <CgSearch size={20} color="#4c4d5e" />
+          
             <TextInput style={estilos.inputpesquisa}
               placeholder="Pesquisar..."/>
           </View>
@@ -155,6 +155,7 @@ const estilos = StyleSheet.create({
       flexDirection: "row",
       marginTop: 25,
       backgroundColor: "#f9f9f9",
+      borderRadius: 5,
     },
   
     corFundo: {
@@ -163,17 +164,6 @@ const estilos = StyleSheet.create({
   
     separaca: {
       marginLeft: 12
-    },
-  
-    
-    doces: {
-      fontSize: 26,
-      lineHeight: 42,
-      color: "#151515",
-      //textShadowColor: 'rgba(0, 0, 0, 0.5)', // Cor da sombra
-      //textShadowOffset: { width: 3, height: 3 }, // Deslocamento da sombra (horizontal e vertical)
-      //textShadowRadius: 8, // Raio da sombra (desfoque)
-      textAlign: "center"
     },
   
     colorCerveja: {
