@@ -1,19 +1,18 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import Produto from "./Components/Produto";
+import Produto from "./components/Produto";
+import Topo from "./components/Topo";
 
 
-import Topo from "./Components/Topo";
 
 
 export default function Carrinho() {
   return (
     <>
       <View style={estilos.corFundo}>
-
         <Topo/>
-
         <Produto/>
+
       </View>
     </>
   );
