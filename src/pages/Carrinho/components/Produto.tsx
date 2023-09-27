@@ -12,7 +12,7 @@ import chivas from "../../../../assets/chivas.png";
 export default function Produto () {
     return <>
 
-<Text style={estilos.titulo}>Faculdade Beer</Text>
+<Text style={estilos.titulo}>Escola da revoada</Text>
         <View style={estilos.carrinho}>
           <Text style={estilos.titulocarrinho}>Whiskys:</Text>
 
