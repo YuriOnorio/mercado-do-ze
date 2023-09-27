@@ -1,13 +1,14 @@
 import React from "react";
 import { StyleSheet, Image, Dimensions, Text, View } from "react-native";
 import topo from "../../../../assets/topo.png";
+import Logo3 from "../../../../assets/Logo3.png";
 
 
 const width = Dimensions.get("screen").width;
 
 export default function Topo() {
     return <>
-    <Image source={topo} style={estilos.topo} />
+    <Image source={Logo3} style={estilos.topo} />
     </>
 }
 
