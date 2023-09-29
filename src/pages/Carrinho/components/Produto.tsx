@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet, TextInput, Image, Text, View } from "react-native";
 
-
 import jack from "../../../../assets/jack.png";
 import RedLabel from "../../../../assets/RedLabel.png";
 import Ballantines from "../../../../assets/Ballantines.png";

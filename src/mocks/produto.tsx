@@ -4,7 +4,7 @@ import Ballantines from "../../../../assets/Ballantines.png";
 import Royal from "../../../../assets/Royal.png";
 import chivas from "../../../../assets/chivas.png";
 
-const carrinho = {
+const produto = {
     topo: {
         titulo: "Detalhes do Carrinho",
     },
@@ -42,4 +42,4 @@ const carrinho = {
     }
   }
 
-export default carrinho;
+export default produto;
