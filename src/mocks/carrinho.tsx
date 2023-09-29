@@ -19,24 +19,24 @@ const carrinho = {
       titulo: "Itens do Carrinho",
       lista: [
         {
-          nome: "Tomate",
-          imagem: tomate,
+          nome: "Jack",
+          imagem: jack,
         },
         {
-          nome: "Brócolis",
-          imagem: brocolis,
+          nome: "RedLabel",
+          imagem: RedLabel,
         },
         {
-          nome: "Batata",
-          imagem: batata,
+          nome: "Ballantines",
+          imagem: Ballantines,
         },
         {
-          nome: "Pepino",
-          imagem: pepino,
+          nome: "Royal",
+          imagem: Royal,
         },
         {
-          nome: "Abóbora",
-          imagem: abobora,
+          nome: "chivas",
+          imagem: chivas,
         }
       ]
     }
