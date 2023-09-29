@@ -12,7 +12,10 @@ export default function Carrinho() {
     <>
       <View style={estilos.corFundo}>
         <Topo titulo={produto.topo.titulo}/>
-        <Produto/>
+        <Produto nome={produto.produtos.nome}
+                 descricao={produto.produtos.descricao}
+                 descricao2={produto.produtos.descricao2}
+        />
 
       </View>
     </>

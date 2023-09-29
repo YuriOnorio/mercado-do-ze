@@ -7,17 +7,21 @@ import Ballantines from "../../../../assets/Ballantines.png";
 import Royal from "../../../../assets/Royal.png";
 import chivas from "../../../../assets/chivas.png";
 
+type Props= {
+  nome: string,
+  descricao: string,
+  descricao2: string;
+}
 
-export default function Produto () {
+
+export default function Produto ({nome, descricao, descricao2}: Props) {
     return <>
 
-<Text style={estilos.titulo}>Escola da revoada</Text>
+<Text style={estilos.titulo}>{nome}</Text>
         <View style={estilos.carrinho}>
-          <Text style={estilos.titulocarrinho}>Whiskys:</Text>
+          <Text style={estilos.titulocarrinho}>{descricao}</Text>
 
-          <Text style={estilos.descricao}>
-            Produtos 100% origianis com o melhor preço
-          </Text>
+          <Text style={estilos.descricao}>{descricao2}</Text>
 
           <View style={estilos.pesquisa}>
           
