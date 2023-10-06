@@ -12,7 +12,6 @@ const produto = {
         nome: "Escola da revoada",
         descricao: "Whiskys:",
         descricao2: "Produtos 100% origianis com o melhor preço",
-        preco: "R$ 40,00",
         botao: "Comprar",
     },
     itens: {
